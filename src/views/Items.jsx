@@ -16,7 +16,7 @@ const Items = () => {
   const [limit, setLimit] = useState(9)
 
   async function getItems() {
-    const res = await axios.get(`http://localhost:3000/products?_page=${page}&_limit=${limit}`)
+    const res = await axios.get(`https://react-sample-data-pagination-server.onrender.com/products?_page=${page}&_limit=${limit}`)
     setItems(res.data)
     console.log(res.data)
   }
