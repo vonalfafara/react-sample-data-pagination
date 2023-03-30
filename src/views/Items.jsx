@@ -22,7 +22,7 @@ const Items = () => {
   }
 
   async function getTotalItems() {
-    const res = await axios.get(`http://localhost:3000/products`)
+    const res = await axios.get(`https://react-sample-data-pagination-server.onrender.com/products`)
     setPages(Math.ceil(res.data.length / limit))
   }
 
